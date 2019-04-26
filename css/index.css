@@ -229,6 +229,15 @@ header nav a:hover {
   justify-content: center;
 }
 
+.box:hover {
+  animation: color-change 1s infinite;
+}
+
+.boxes a {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .box1 {
   background: teal;
 }
@@ -347,4 +356,172 @@ footer nav a:hover {
 
 .about-bottom-content {
   margin-bottom: 5%;
+}
+
+/* CONTACT PAGE CODE */
+
+h1 {
+  font-size: 25px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+.contact-content {
+  margin: 2% 0 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.contact-column {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.contact-column2 {
+  margin-left: 5%;
+}
+
+.contact-text {
+  margin-top: 3%;
+}
+
+.contact-form {
+  background-image: radial-gradient(#e8e8e8, #cecece);
+  border: 1px solid black;
+  padding: 20px 0 20px 15px;
+  margin-bottom: 5%;
+  width: 99%;
+  border-radius: 8px;
+}
+
+input {
+  display: inline-block;
+  width: 70%;
+  height: 25px;
+  border: 0.5px solid grey;
+}
+
+button {
+  width: 90%;
+  display: inline-block;
+  height: 28px;
+  border: 2px solid black;
+  color: black;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+button:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+
+.map {
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media img {
+  border-radius: 8px;
+}
+
+.social-media a:hover {
+  opacity: 0.5;
+}
+
+@media all and (max-width: 800px) {
+  header {
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  .contact-content {
+    flex-flow: row wrap;
+    width: 70%;
+  }
+
+  footer nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .top-content,
+  .middle-content,
+  .boxes,
+  .bottom-content {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+@media all and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-content,
+  .middle-content,
+  .boxes,
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-image: radial-gradient(circle, teal, gold, cadetblue);
+  }
+  10% {
+    background-image: radial-gradient(circle, gold, cadetblue, coral);
+  }
+  20% {
+    background-image: radial-gradient(circle, cadetblue, coral, crimson);
+  }
+  30% {
+    background-image: radial-gradient(circle, coral, crimson, forestgreen);
+  }
+  40% {
+    background-image: radial-gradient(circle, crimson, forestgreen, darkorchid);
+  }
+  50% {
+    background-image: radial-gradient(circle, forestgreen, darkorchid, hotpink);
+  }
+  60% {
+    background-image: radial-gradient(circle, darkorchid, hotpink, indigo);
+  }
+  70% {
+    background-image: radial-gradient(circle, hotpink, indigo, dodgerblue);
+  }
+  80% {
+    background-image: radial-gradient(circle, indigo, dodgerblue, teal);
+  }
+  90% {
+    background-image: radial-gradient(circle, dodgerblue, teal, gold);
+  }
+  100% {
+    background-image: radial-gradient(circle, teal, gold, cadetblue);
+  }
+}
+
+/* WOW PAGE CODE  */
+
+.wow {
+  animation: color-change 1s infinite;
 }
