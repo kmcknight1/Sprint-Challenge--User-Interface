@@ -305,3 +305,46 @@ footer nav a {
 footer nav a:hover {
   color: grey;
 }
+
+/* ABOUT PAGE CODE  */
+
+.about-top-content {
+  margin: 3% 0 3% 0;
+}
+
+.about-middle-content {
+  border-top: 1px dashed black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.about-card {
+  border-bottom: 1px dashed black;
+  margin: 5% 0 5% 0;
+  width: 370px;
+}
+
+.about-middle-content img {
+  margin-bottom: 2%;
+}
+
+.about-middle-content button {
+  margin: 5% 0 5% 0;
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  border: 2px solid black;
+  font-size: 14px;
+}
+
+.about-middle-content button:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+}
+
+.about-bottom-content {
+  margin-bottom: 5%;
+}
